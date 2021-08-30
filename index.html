@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <title>Prima Cimanggu</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="bg"></div>
+        <div class="logo">
+            <h4>Prima Cimanggu</h4>
+        </div>
+
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Our Product</a></li>
+            <li><a href="">Location</a></li>
+            <li><a href="">Contact Us</a></li>
+        </ul>
+
+    </div>
+    <div class="kotak"> 
+        <h1 class ="h2service">Our Services</h1>
+    
+        <div class="ourservice">
+            <div class="service">
+                <img src="townhouse.png" style="width: 15%;">
+                <h4>Cluster Townhouse</h4>
+                <p>
+                    Dengan Konsep Cluster-Townhouse yang terdiri
+                    dari beberapa cluster dengan konsep Townhouse dengan
+                    fasilitas seperti Mall, Taman Hiburan, dan lain-lain.
+                </p>
+            </div>
+            <div class="service">
+                <img src="house.png" style="width: 15%;">
+                <h4>Green City</h4>
+                <p>
+                    Menghadirkan sebuah kawasan hunian yang asri
+                    di tengah kota.
+                </p>
+            </div>
+            <div class="service">
+                <img src="env.png" style="width: 15%;">
+                <h4>Green Environment</h4>
+                <p>
+                    Dengan gaya hidup elegan, sehat, dan berkualitas
+                    di tengah atmosfer hunian yang nyaman. Kawasan ini
+                    menghadirkan rumah-rumah modern yang ditujukan
+                    untuk keluarga modern.
+                </p>
+            </div>
+        </div>
+        </div>
+        <div class="bg">
+        <h1 class="wprovide">WHAT DO WE PROVIDE?</h1>
+    <div class="provide">
+        <h4>Accesiblity</h4>
+        <p>
+            Lokasi strategis dekat dengan Stasiun Cilebut dan Tol BOR simpang Yasmin
+        </p>
+    </div>
+    <div class="provide">
+        <h4>Facilities</h4>
+        <p>
+            One Gate System, Pos Security, CCTV, Mushola, dekat dengan Pusat Perbelanjaan, Taman Hiburan, dan lain-lain.
+        </p>
+    </div>
+    </div>
+    <h1 class="wnearby">WHATS NEARBY?</h1>
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 6</div>
+          <img src="hermina.jpg" style="width:100%">
+          <div class="text">Rumah sakit Hermina</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 6</div>
+          <img src="islam.jpg" style="width:100%">
+          <div class="text">Rumah sakit Islam</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 6</div>
+          <img src="marcopolo.jpg" style="width:100%">
+          <div class="text">Kolam Renang Marcopolo</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 6</div>
+            <img src="transmart.jpeg" style="width: 100%">
+            <div class="text">Transmart Carrefour</div>
+          </div>
+  
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 6</div>
+            <img src="cilebut.jpg" style="width:100%">
+            <div class="text">Stasiun Cilebut</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 6</div>
+            <img src="plaza.jpg" style="width:100%">
+            <div class="text">Yogya Plaza</div>
+        </div>
+  
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        <div class="boutus">
+    <h1 class="aboutus">About Us</h1>
+        <div class="about">
+            <p>
+                Perumahan berkonsep Cluster-Townhouse terintergrasi dengan pintu Tol BOR Simpang Yasmin dan Stasiun Cilebut serta dekat dengan Transmart, 
+                Lotte Mart, RS Hermina, Marcopolo Waterpark, dan masih banyak lagi. Cukup reservasi dengan 8 Juta langsung akad dan menempati rumah 2 lantai
+                bersertifikat Hak Milik.
+            </p>
+        </div>
+    </div>
+        <div class="pship">
+    <h1 class="partner">In Partnership with</h1>
+        <div class="partnership">
+            <img src="btn.png" width="150" height="90">
+            <img src="btnsyariah.jpg" width="150" height="90">
+            <img src="mandiri.png" width="150" height="90">
+            <img src="bsi.png" width="150" height="90">
+        </div>
+    </div>
+    <h1 class="market">Marketing Gallery</h1>
+    <div class="markett">
+            <p>
+                Jl. Subur - Mekarwangi, Tanah Sereal
+                Kota Bogor
+                Telp. 0251 798056
+                Whatsapp 0858 9489 3703
+            </p>
+        <h4 class="marketing">Untuk info lebih lanjut, Silahkan menghubungi nomor diatas. Atau klik 'Chat Online'</h4>
+    </div>
+</body>
+</html>
